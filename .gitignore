@@ -1,0 +1,19 @@
+# Secrets and local state
+.env
+wordpress/
+db_data/
+
+# Never commit database dumps, archives or backups: they contain password hashes,
+# two-factor secrets, API keys and personal data.
+*.sql
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+backups/
+transfer/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
