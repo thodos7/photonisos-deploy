@@ -1,0 +1,33 @@
+/* ===== Αποτελέσματα αναζήτησης: μικρές κάρτες, πολλές ανά σειρά ===== */
+.photonisos-results .ps-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+}
+.photonisos-results .ps-card {
+  display: flex !important;
+  flex-direction: column;
+  width: auto !important;
+  margin: 0 !important;
+}
+.photonisos-results .ps-thumb-link {
+  display: block;
+}
+.photonisos-results .ps-thumb {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.photonisos-results .ps-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.photonisos-results .ps-title {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+.photonisos-results .ps-meta {
+  font-size: 0.8rem;
+}
